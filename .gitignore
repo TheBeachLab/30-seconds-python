@@ -1,3 +1,4 @@
 ignore/
 .vscode/
 *.pyc
+.ipynb_checkpoints/
