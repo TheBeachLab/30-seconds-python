@@ -6,6 +6,8 @@ Inspired by [Python-programming-exercises](https://github.com/zhiwehu/Python-pro
 
 ## :point_right: Exercise 1
 
+tags: `arithmetics` `lists` `python3` `tested`
+
 ### Question
 
 Write a program which will find all such numbers which are divisible by 7 but are not a multiple of 5,
@@ -14,7 +16,7 @@ The numbers obtained should be printed in a comma-separated sequence on a single
 
 ### Hints
 
-Consider use `range(#begin, #end)` function
+Consider use `range()` function
 
 ### Solution
 
@@ -24,8 +26,16 @@ for i in range(2000, 3201):
     if (i%7==0) and (i%5!=0):
         l.append(str(i))
 
-print ','.join(l)
+s = ',' # separator
+print (str.join(s,l))
 ```
+
+### Explanation
+
+* `%7` is the residue of the division by 7. If the residue is 0 it means it is multiple of 7, or divisible by 7
+* The `range()` function must reach be 3201 because it will reach until 3201-1 = 3200
+* `.append(x)` method will add x to the list
+* Items in the list are converted to strings because the `.join()` method can only joins strings
 
 ## :point_right: Exercise 2
 
