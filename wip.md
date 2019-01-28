@@ -1,91 +1,4 @@
-
-
-## :point_right: Exercise 2
-
-Level 1
-
-### Question
-
-Write a program which can compute the factorial of a given numbers.
-The results should be printed in a comma-separated sequence on a single line.
-Suppose the following input is supplied to the program:
-8
-Then, the output should be:
-40320
-
-### Hints
-
-In case of input data being supplied to the question, it should be assumed to be a console input.
-
-### Solution
-
-```python
-def fact(x):
-    if x == 0:
-        return 1
-    return x * fact(x - 1)
-
-x=int(raw_input())
-print fact(x)
-```
-
-## :point_right: Exercise 3
-
-Level 1
-
-### Question
-
-With a given integral number n, write a program to generate a dictionary that contains (i, i*i) such that is an integral number between 1 and n (both included). and then the program should print the dictionary.
-Suppose the following input is supplied to the program:
-8
-Then, the output should be:
-{1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64}
-
-### Hints
-
-In case of input data being supplied to the question, it should be assumed to be a console input.
-Consider use dict()
-
-### Solution
-```python
-n=int(raw_input())
-d=dict()
-for i in range(1,n+1):
-    d[i]=i*i
-
-print d
-```
-## :point_right: Exercise 4
-
-Level 1
-
-### Question
-
-Write a program which accepts a sequence of comma-separated numbers from console and generate a list and a tuple which contains every number.
-Suppose the following input is supplied to the program:
-`34,67,55,33,12,98`
-Then, the output should be:
-```python
-['34', '67', '55', '33', '12', '98']
-('34', '67', '55', '33', '12', '98')
-```
-
-### Hints
-
-In case of input data being supplied to the question, it should be assumed to be a console input.
-tuple() can convert list to tuple
-
-### Solution
-
-```python
-values=raw_input()
-l=values.split(",")
-t=tuple(l)
-print l
-print t
-```
-
-## :point_right: Exercise 5
+## Exercise 5
 
 Level 1
 
@@ -116,7 +29,7 @@ strObj = InputOutString()
 strObj.getString()
 strObj.printString()
 ```
-## :point_right: Exercise 6
+## Exercise 6
 
 Level 2
 
@@ -151,7 +64,7 @@ for d in items:
 
 print ','.join(value)
 ```
-## :point_right: Exercise 7
+## Exercise 7
 
 Level 2
 
@@ -183,7 +96,7 @@ for row in range(rowNum):
 
 print multilist
 ```
-## :point_right: Exercise 8
+## Exercise 8
 
 Level 2
 
@@ -205,7 +118,7 @@ items=[x for x in raw_input().split(',')]
 items.sort()
 print ','.join(items)
 ```
-## :point_right: Exercise 9
+## Exercise 9
 
 Level 2
 
@@ -240,7 +153,7 @@ while True:
 for sentence in lines:
     print sentence
 ```
-## :point_right: Exercise 10
+## Exercise 10
 
 Level 2
 
@@ -263,7 +176,7 @@ s = raw_input()
 words = [word for word in s.split(" ")]
 print " ".join(sorted(list(set(words))))
 ```
-## :point_right: Exercise 11
+## Exercise 11
 
 Level 2
 
@@ -291,7 +204,7 @@ for p in items:
 
 print ','.join(value)
 ```
-## :point_right: Exercise 12
+## Exercise 12
 
 Level 2
 
@@ -313,7 +226,7 @@ for i in range(1000, 3001):
         values.append(s)
 print ",".join(values)
 ```
-## :point_right: Exercise 13
+## Exercise 13
 
 Level 2
 
@@ -344,7 +257,7 @@ for c in s:
 print "LETTERS", d["LETTERS"]
 print "DIGITS", d["DIGITS"]
 ```
-## :point_right: Exercise 14
+## Exercise 14
 
 Level 2
 
@@ -375,7 +288,7 @@ for c in s:
 print "UPPER CASE", d["UPPER CASE"]
 print "LOWER CASE", d["LOWER CASE"]
 ```
-## :point_right: Exercise 15
+## Exercise 15
 
 Level 2
 
@@ -400,7 +313,7 @@ n3 = int( "%s%s%s" % (a,a,a) )
 n4 = int( "%s%s%s%s" % (a,a,a,a) )
 print n1+n2+n3+n4
 ```
-## :point_right: Exercise 16
+## Exercise 16
 
 Level 2
 
@@ -424,7 +337,7 @@ numbers = [x for x in values.split(",") if int(x)%2!=0]
 print ",".join(numbers)
 ```
 
-## :point_right: Exercise 17
+## Exercise 17
 
 Level 2
 
@@ -467,7 +380,7 @@ while True:
 print netAmount
 ```
 
-## :point_right: Exercise 18
+## Exercise 18
 
 Level 3
 
@@ -520,7 +433,7 @@ for p in items:
 print ",".join(value)
 ```
 
-## :point_right: Exercise 19
+## Exercise 19
 
 Level 3
 
@@ -561,7 +474,7 @@ while True:
 print sorted(l, key=itemgetter(0,1,2))
 ```
 
-## :point_right: Exercise 20
+## Exercise 20
 
 Level 3
 
@@ -587,7 +500,7 @@ def putNumbers(n):
 for i in reverse(100):
     print i
 ```
-## :point_right: Exercise 21
+## Exercise 21
 
 Level 3
 
@@ -639,7 +552,7 @@ while True:
 print int(round(math.sqrt(pos[1]**2+pos[0]**2)))
 ```
 
-## :point_right: Exercise 22
+## Exercise 22
 
 Level 3
 
@@ -680,7 +593,7 @@ for w in words:
     print "%s:%d" % (w,freq[w])
 ```
 
-## :point_right: Exercise 23
+## Exercise 23
 
 Level 1
 
@@ -702,7 +615,7 @@ print square(2)
 print square(3)
 ```
 
-## :point_right: Exercise 24
+## Exercise 24
 
 Level 1
 
@@ -734,7 +647,7 @@ print square(2)
 print square.__doc__
 ```
 
-## :point_right: Exercise 25
+## Exercise 25
 
 Level 1
 
@@ -766,7 +679,7 @@ nico.name = "Nico"
 print "%s name is %s" % (Person.name, nico.name)
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -785,7 +698,7 @@ def SumFunction(number1, number2):
 print SumFunction(1,2)
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -804,7 +717,7 @@ def printValue(n):
 printValue(3)
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -823,7 +736,7 @@ def printValue(n):
 printValue(3)
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -841,7 +754,7 @@ def printValue(s1,s2):
 printValue("3","4") #7
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -860,7 +773,7 @@ def printValue(s1,s2):
 printValue("3","4") #34
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -888,7 +801,7 @@ def printValue(s1,s2):
 printValue("one","three")
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -911,7 +824,7 @@ def checkValue(n):
 checkValue(7)
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -936,7 +849,7 @@ def printDict():
 printDict()
 ```
 
-## :point_right: Exercise
+## Exercise
 
 2.10
 
@@ -963,7 +876,7 @@ def printDict():
 printDict()
 ```
 
-## :point_right: Exercise
+## Exercise
 
 2.10
 
@@ -992,7 +905,7 @@ def printDict():
 printDict()
 ```
 
-## :point_right: Exercise
+## Exercise
 
 2.10
 
@@ -1020,7 +933,7 @@ def printDict():
 printDict()
 ```
 
-## :point_right: Exercise
+## Exercise
 
 2.10
 
@@ -1046,7 +959,7 @@ def printList():
 printList()
 ```
 
-## :point_right: Exercise
+## Exercise
 
 2.10
 
@@ -1074,7 +987,7 @@ def printList():
 printList()
 ```
 
-## :point_right: Exercise
+## Exercise
 
 2.10
 
@@ -1101,7 +1014,7 @@ def printTuple():
 printTuple()
 ```
 
-## :point_right: Exercise
+## Exercise
 
 2.10
 
@@ -1123,7 +1036,7 @@ print tp1
 print tp2
 ```
 
-## :point_right: Exercise
+## Exercise
 
 2.10
 
@@ -1149,7 +1062,7 @@ tp2=tuple(li)
 print tp2
 ```
 
-## :point_right: Exercise
+## Exercise
 
 2.14
 
@@ -1171,7 +1084,7 @@ else:
     print "No"
 ```
 
-## :point_right: Exercise
+## Exercise
 
 3.4
 
@@ -1192,7 +1105,7 @@ evenNumbers = filter(lambda x: x%2==0, li)
 print evenNumbers
 ```
 
-## :point_right: Exercise
+## Exercise
 
 3.4
 
@@ -1213,7 +1126,7 @@ squaredNumbers = map(lambda x: x**2, li)
 print squaredNumbers
 ```
 
-## :point_right: Exercise
+## Exercise
 
 3.5
 
@@ -1235,7 +1148,7 @@ evenNumbers = map(lambda x: x**2, filter(lambda x: x%2==0, li))
 print evenNumbers
 ```
 
-## :point_right: Exercise
+## Exercise
 
 3.5
 
@@ -1255,7 +1168,7 @@ evenNumbers = filter(lambda x: x%2==0, range(1,21))
 print evenNumbers
 ```
 
-## :point_right: Exercise
+## Exercise
 
 3.5
 
@@ -1275,7 +1188,7 @@ squaredNumbers = map(lambda x: x**2, range(1,21))
 print squaredNumbers
 ```
 
-## :point_right: Exercise
+## Exercise
 
 7.2
 
@@ -1300,7 +1213,7 @@ anAmerican.printNationality()
 American.printNationality()
 ```
 
-## :point_right: Exercise
+## Exercise
 
 7.2
 
@@ -1327,7 +1240,7 @@ print anAmerican
 print aNewYorker
 ```
 
-## :point_right: Exercise
+## Exercise
 
 7.2
 
@@ -1353,7 +1266,7 @@ aCircle = Circle(2)
 print aCircle.area()
 ```
 
-## :point_right: Exercise
+## Exercise
 
 7.2
 
@@ -1380,7 +1293,7 @@ aRectangle = Rectangle(2,10)
 print aRectangle.area()
 ```
 
-## :point_right: Exercise
+## Exercise
 
 7.2
 
@@ -1426,7 +1339,7 @@ Use `raise()` to raise an exception.
 raise RuntimeError('something wrong')
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -1452,7 +1365,7 @@ finally:
     print 'In finally block for cleanup'
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -1478,7 +1391,7 @@ class MyError(Exception):
 error = MyError("something wrong")
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -1509,7 +1422,7 @@ r2 = re.match(pat2,emailAddress)
 print r2.group(1)
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -1540,7 +1453,7 @@ r2 = re.match(pat2,emailAddress)
 print r2.group(2)
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -1568,7 +1481,7 @@ s = raw_input()
 print re.findall("\d+",s)
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -1583,7 +1496,7 @@ Use u'strings' format to define unicode string.
 unicodeString = u"hello world!"
 print unicodeString
 ```
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -1601,7 +1514,7 @@ u = unicode( s ,"utf-8")
 print u
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -1613,7 +1526,7 @@ Write a special comment to indicate a Python source code file is in unicode.
 
 `# -*- coding: utf-8 -*-`
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -1644,7 +1557,7 @@ for i in range(1,n+1):
 print sum
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -1683,7 +1596,7 @@ n=int(raw_input())
 print f(n)
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -1722,7 +1635,7 @@ n=int(raw_input())
 print f(n)
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -1764,7 +1677,7 @@ values = [str(f(x)) for x in range(0, n+1)]
 print ",".join(values)
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -1804,7 +1717,7 @@ for i in EvenGenerator(n):
 print ",".join(values)
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -1841,7 +1754,7 @@ for i in NumGenerator(n):
 print ",".join(values)
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -1859,7 +1772,7 @@ for i in li:
     assert i%2==0
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -1885,7 +1798,7 @@ expression = raw_input()
 print eval(expression)
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -1919,7 +1832,7 @@ print bin_search(li,11)
 print bin_search(li,12)
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -1936,7 +1849,7 @@ import random
 print random.random()*100
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -1953,7 +1866,7 @@ import random
 print random.random()*100-5
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -1970,7 +1883,7 @@ import random
 print random.choice([i for i in range(11) if i%2==0])
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -1987,7 +1900,7 @@ import random
 print random.choice([i for i in range(201) if i%5==0 and i%7==0])
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -2004,7 +1917,7 @@ import random
 print random.sample(range(100), 5)
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -2021,7 +1934,7 @@ import random
 print random.sample([i for i in range(100,201) if i%2==0], 5)
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -2038,7 +1951,7 @@ import random
 print random.sample([i for i in range(1,1001) if i%5==0 and i%7==0], 5)
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -2055,7 +1968,7 @@ import random
 print random.randrange(7,16)
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -2075,7 +1988,7 @@ print t
 print zlib.decompress(t)
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -2093,7 +2006,7 @@ t = Timer("for i in range(100):1+1")
 print t.timeit()
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -2112,7 +2025,7 @@ shuffle(li)
 print li
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -2131,7 +2044,7 @@ shuffle(li)
 print li
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -2155,7 +2068,7 @@ for i in range(len(subjects)):
             print sentence
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -2173,7 +2086,7 @@ li = [x for x in li if x%2!=0]
 print li
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -2191,7 +2104,7 @@ li = [x for x in li if x%5!=0 and x%7!=0]
 print li
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -2210,7 +2123,7 @@ li = [x for (i,x) in enumerate(li) if i%2!=0]
 print li
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -2227,7 +2140,7 @@ array = [[ [0 for col in range(8)] for col in range(5)] for row in range(3)]
 print array
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -2246,7 +2159,7 @@ li = [x for (i,x) in enumerate(li) if i not in (0,4,5)]
 print li
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -2264,7 +2177,7 @@ li = [x for x in li if x!=24]
 print li
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -2284,7 +2197,7 @@ li=list(set1)
 print li
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -2311,7 +2224,7 @@ li=[12,24,35,24,88,120,155,88,120,155]
 print removeDuplicate(li)
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -2342,7 +2255,7 @@ print aMale.getGender()
 print aFemale.getGender()
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -2379,7 +2292,7 @@ for s in s:
 print '\n'.join(['%s,%s' % (k, v) for k, v in dic.items()])
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -2406,7 +2319,7 @@ s = s[::-1]
 print s
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -2433,7 +2346,7 @@ s = s[::2]
 print s
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
@@ -2450,7 +2363,7 @@ import itertools
 print list(itertools.permutations([1,2,3]))
 ```
 
-## :point_right: Exercise
+## Exercise
 
 ### Question
 
